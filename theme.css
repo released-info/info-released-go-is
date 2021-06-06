@@ -34,3 +34,12 @@
   color: #000 !important; /* change color */
 }
 /* ----------------------------------------- */
+
+/* IMAGE */
+.features-section .logo-container {
+  height: 11vw;
+  max-height: 100px;
+  min-height: 50px;
+  right: 1rem;
+  bottom: 1rem;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1671818204-->
+<!--timestamp=1671960895-->
 
 <head>
   <meta charset="UTF-8">
@@ -21,14 +21,14 @@
   <meta property="og:url" content="https://is.go.released.info" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Is GO 1.20 Released?" />
-  <meta property="og:description" content="There is no information about GO 1.20 release! Still waiting! #released.info" />
+  <meta property="og:description" content="GO 1.20 will be released in 38 days! #released.info" />
   <meta property="og:image" content="https://released.info/assets/img/technologies/go/go-logo.png" />
 
   <!-- twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="ReleasedInfo" />
   <meta name="twitter:title" content="Is GO 1.20 Released?" />
-  <meta name="twitter:description" content="There is no information about GO 1.20 release! Still waiting! #released.info" />
+  <meta name="twitter:description" content="GO 1.20 will be released in 38 days! #released.info" />
   <meta name="twitter:image" content="https://released.info/assets/img/technologies/go/go-logo.png" />
 
   <meta name="url" content="https://is.go.released.info" />
@@ -45,7 +45,7 @@
 
 <body>
 
-  <input id="released-days" type="hidden" value="9" />
+  <input id="released-days" type="hidden" value="38" />
 
   <main role="main">
     <a href="https://released.info/index.html" class="go-back"><i class="bi bi-arrow-left"></i></a>
@@ -84,13 +84,13 @@
             <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
 
             
-            
-            
             <span>
-              <div class="white-box" id="no-information">
-                No information
+              <div class="odometer-content" id="counter">
+                <div id="odometer"></div>
               </div>
             </span>
+            
+            
 
             <!-- END -->
 
@@ -123,19 +123,25 @@
 
             <ul>
               <li>
-                Go 1.20 adds support of 64-bit ARM architecture on Windows
+                Allow conversions from a slice to an array
               </li>
             </ul>
 
             <ul>
               <li>
-                The 64-bit MIPS architecture on OpenBSD
+                struct values are compared one field at a time,
               </li>
             </ul>
 
             <ul>
               <li>
-                (*Conn).HandshakeContext was added
+                supports collecting code coverage profiles for programs
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Improved detection of loop variable capture by nested functions
               </li>
             </ul>
 
@@ -143,23 +149,18 @@
           <div class="col-md-5">
             <ul>
               <li>
-                allow conversion from slice to array ptr
+                Comparable types (such as ordinary interfaces) may now satisfy comparable constraints
               </li>
             </ul>
             <ul>
               <li>
-                The new methods File.OpenRaw, Writer.CreateRaw, Writer.Copy
-              </li>
-            </ul>
-            <ul>
-              <li>
-                Time now has a GoString method
+                instantiate a type parameter constrained by comparable
               </li>
             </ul>
           </div>
         </div>
         <div class="text-center">
-          <a target="_blank" href="https://tip.golang.org/doc/go1.17" class="btn btn-primary btn-lg">Read more</a>
+          <a target="_blank" href="https://tip.golang.org/doc/go1.20" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
       <div class="logo-container">
@@ -298,7 +299,10 @@
     <section class="about-section">
       <div class="container-lg">
         <div>
-    <h2>About GO</h2>
+    <h1>Version</h1>
+    To check which version of Go lang you are using, run the following command in your terminal:
+    <pre>go version</pre>
+    <h1>About GO</h1>
     Go is a statically typed, compiled programming language designed at Google.
     It runs on most operative systems, including the obvious major ones such as Windows and OSX, Unix, and Linux.
     GO utilizes a very similar syntax to C, and it aims to be as efficient as these languages while offering the
